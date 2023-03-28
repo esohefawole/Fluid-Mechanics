@@ -37,8 +37,73 @@ $P = {\rho} gh = {\gamma} h$
 $P = F/A$  
 $W = {\rho} gV$ (also Buoyancy)  
 
-### Fluid Kinematics
+### Fluid Kinematics (micro/differential)
 
-Conservation of Mass: $\frac{\partial \rho}{\partial t}$ 
+Conservation of Mass: $\frac{\partial \rho}{\partial t} +\underline{\nabla} \cdot (\rho \underline{v}) = 0$  
+
+- if $\rho$ is constant, $\underline{\nabla} \cdot \underline{v} = 0$  
+
+Conservation of Momentum:
+
+General:  
+
+$\rho \frac{D\underline{v}}{Dt}  = \rho \underline{g} - \underline{\nabla} P + \underline{\nabla} \cdot \underline{\underline{\tau}}$  
+
+$\rho \frac{\partial \underline{v}}{\partial t} + \rho \underline{v} \cdot \underline{\nabla} \underline{v} = \rho \underline{g} - \underline{\nabla} P + \underline{\nabla} \cdot \underline{\underline{\tau}}$  
+
+Navier-Stokes:  
+
+$\rho \frac{\partial \underline{v}}{\partial t} + \rho \underline{v} \cdot \underline{\nabla} \underline{v} = \rho \underline{g} - \underline{\nabla} P + \mu \nabla^2 \cdot \underline{v}$
+
+### Fluid Kinematics (macro)
+
+Conservation of Mass:  
+
+$\frac{dm}{dt} = \rho \int_{CS_{entrance}} \ v \ dA - \rho \int_{CS_{exit}} \ v \ dA$  
+
+$\rho \frac{dV}{dt} = \rho \int_{CS_{entrance}} \ v \ dA - \rho \int_{CS_{exit}} \ v \ dA$  
+
+$\frac{\partial}{\partial t} \int_{CV} \ \rho \ dV = - \int_{CS} \rho \underline{v} \cdot \underline{n} \ dA$   (same as)   $ \rho Q_1 = \rho Q_2$  
+
+Conservation of Momentum:
+
+$\frac{\partial}{\partial t} \int_{CV} \rho \underline{v} \ dV \ + \int_{CS} \rho \underline{v} (\underline{v} \cdot \underline{n}) \ dA = \sum \underline{F}$  
+
+Conservation of Energy (Bernoulli's Equation):
+
+$\dot{Q} + \dot{W} = \int e \rho \underline{v} \cdot \underline{n} \ dA$
+
+With the following assumptions
+- steady flow
+- $\rho$ is constant
+- neglect friction, shear stress and viscous stress
+- one entrance and one exit with constant properties
+- constant volume  
+
+We get: $\frac{P_1}{\rho g} + z_1 + \frac{v_1^2}{2g} = \frac{P_2}{\rho g} + z_2 + \frac{v_2^2}{2g}$  where "1" denotes the entrance and "2" denotes the exit
+
+Modified Bernoulli's Equation (including fritional stresses, pumps, fans, and turbines):  
+
+$\frac{\dot{W}}{\rho g Q} = (\frac{1}{2} \frac{<v>^2}{g}+z+\frac{P}{\rho g})_2 + (\frac{1}{2} \frac{<v>^2}{g}+z+\frac{P}{\rho g})_1$  
+
+$\frac{\dot{W}}{\rho g Q} = f \frac{<v>^2}{2g} \frac{L}{D}$  
+
+where $f$ is the friction factor that depends on the Reynolds Number and Roughness ($\frac{\epsilon}{D}$)  
+
+### Flow over surfaces
+
+Reynolds Number (Re): $\frac{\rho u L}{\mu}$  
+
+Drag Force: $C_D \frac{1}{2} \rho u^2 A$ where $C_D$ depends on shape, oreientation, and Re  
+
+Lift Force: $C_L \frac{1}{2} \rho u^2 A$  
+
+### Boundary Layer
+
+Boundary Layer Thickness: $\delta = 1.721x / \sqrt{Re_x}$  
+
+where $Re_x = \frac{\rho u x}{\mu}$  
+
+Drag Force: $C_{D_L} \frac{1}{2} \rho u^2 A$ where $C_{D_L}$ is $C_D$ for a given length of wall L (average $C_D$ over whole L)
 
 
