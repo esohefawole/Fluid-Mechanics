@@ -37,6 +37,8 @@ $P = {\rho} gh = {\gamma} h$
 $P = F/A$  
 $W = {\rho} gV$ (also Buoyancy)  
 
+----------------------------------------
+
 ### Fluid Kinematics (micro/differential)
 
 Conservation of Mass: $\frac{\partial \rho}{\partial t} +\underline{\nabla} \cdot (\rho \underline{v}) = 0$  
@@ -54,6 +56,8 @@ $\rho \frac{\partial \underline{v}}{\partial t} + \rho \underline{v} \cdot \unde
 Navier-Stokes:  
 
 $\rho \frac{\partial \underline{v}}{\partial t} + \rho \underline{v} \cdot \underline{\nabla} \underline{v} = \rho \underline{g} - \underline{\nabla} P + \mu \nabla^2 \cdot \underline{v}$
+
+----------------------------------------------
 
 ### Fluid Kinematics (macro)
 
@@ -90,6 +94,8 @@ $\frac{\dot{W}}{\rho g Q} = f \frac{<v>^2}{2g} \frac{L}{D}$
 
 where $f$ is the friction factor that depends on the Reynolds Number and Roughness ($\frac{\epsilon}{D}$)  
 
+-------------------------------------
+  
 ### Flow over surfaces
 
 Reynolds Number (Re): $\frac{\rho u L}{\mu}$  
@@ -98,6 +104,8 @@ Drag Force: $C_D \frac{1}{2} \rho u^2 A$ where $C_D$ depends on shape, oreientat
 
 Lift Force: $C_L \frac{1}{2} \rho u^2 A$  
 
+-------------------------------------
+  
 ### Boundary Layer
 
 Boundary Layer Thickness: $\delta = 1.721x / \sqrt{Re_x}$  
