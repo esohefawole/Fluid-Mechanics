@@ -25,10 +25,20 @@ viscosity ($\mu$) [=] $kg/{m \cdot s}$
 specific weight ($\gamma$) [=] $N/m^3$  
 specific gravity (SG) [=] unitless ($\gamma_x$/ $\gamma_{H_{2}O}$) where $x$ is the specified liquid or sample  
 volumetric flow rate (Q) [=] ${m^3/s}$  
-torque (T) = F x r [=]  $kg {\cdot m^2/ s^2}$  
+torque (T) = r x F [=]  $kg {\cdot m^2/ s^2}$  
 stress ($\tau$) [=] $kg/{m \cdot s^2}$  
 angular velocity ($\omega$) [=] $1/t$ (radians per second)  
 theta ($\theta$) [=] radians  
 
+## Equations
+
+### Fluid Statics
+$P = {\rho} gh = {\gamma} h$  
+$P = F/A$  
+$W = {\rho} gV$ (also Buoyancy)  
+
+### Fluid Kinematics
+
+Conservation of Mass: $\frac{\partial \rho}{\partial t}$ 
 
 
